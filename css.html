@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{font-family: 'Kanit', sans-serif;
+            margin: 0px;
+        padding: 0px;}
+        form{display: flex;
+        flex-direction: column;
+    justify-content: center;
+align-items: center;
+}
+.blank{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 390px;
+    height: 22px;
+    margin: 11px 11px;
+    padding: 7px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 4px 13px #9478c7;
+transition: .4s ease-in;}
+    .blank:hover{
+            width: 400px;
+            height: 30px;
+            margin: 0px 36px;}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45rem;
+    background: linear-gradient(352deg, #A88BEB, #F8CEEC);
+}
+.btn{ width: 126px;
+    background-color: rgb(125, 38, 206);
+    color: white;
+    border: none;
+    border-radius: 29px;
+    height: 40px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s ease-in;
+    box-shadow: 0px 10px 11px rgb(78 36 118) ;
+    cursor: pointer;}
+.btn:hover{
+    width: 177px;
+    /* height: 0px; */
+    font-size: 20px;
+    line-height: 57px;}
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+  
+    <form action="">
+        <input  class="blank" type="text" placeholder="Enter Your Name">
+        <input class="blank"  type="email" placeholder="Enter Your Email Id">
+        <input class="blank"  type="password" placeholder="Enter Your Password">
+        <input class="blank"  type="date" placeholder="Enter Your Password">
+        <div id="male-female" style="
+        display: flex;
+        padding: 5px;
+    "> <label style="
+    margin: 11px 10px;
+    font-size: 19px;" for="">Male</label>
+
+            <input type="radio" name="s">
+            <label style="
+            margin: 11px 10px;
+            font-size: 19px;" for="">Female</label>
+            <input type="radio" name="s"></div>
+       <div class="agree">
+        <input type="checkbox">
+    <label style="
+    font-size: 19px;" for="">I am agree to Your Licence Agreement</label></div>
+<div style="
+display: flex;
+justify-content: space-evenly;
+width: 25rem;">  <button type="submit" class="btn">Submit</button>
+    <button type="reset" class="btn">Reset</button></div>
+      
+    </form>
+</div>
+</body>
+
+</html>
